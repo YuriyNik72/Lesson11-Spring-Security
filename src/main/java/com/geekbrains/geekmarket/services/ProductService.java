@@ -4,12 +4,10 @@ import com.geekbrains.geekmarket.entities.Product;
 import com.geekbrains.geekmarket.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class ProductService {
@@ -64,5 +62,23 @@ public class ProductService {
             return product.get();
         }
         return null;
+    }
+
+    public Page<Product> getFiltered(String filter, int size, int num) {
+        return null;
+    }
+
+    public Page<Product> findAll(int size, int num) {
+        return null;
+    }
+
+    public Product findById(long id) {
+        return null;
+    }
+
+    public void deleteById(long id) {
+    }
+
+    public void saveOrUpdate(Product product) {
     }
 }

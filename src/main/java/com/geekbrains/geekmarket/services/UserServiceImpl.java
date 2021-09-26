@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 	private RoleRepository roleRepository;
-	private BCryptPasswordEncoder passwordEncoder;
+//	private BCryptPasswordEncoder passwordEncoder;
 
 	@Autowired
 	public void setUserRepository(UserRepository userRepository) {
@@ -31,10 +31,10 @@ public class UserServiceImpl implements UserService {
 		this.roleRepository = roleRepository;
 	}
 
-	@Autowired
-	public void setPasswordEncoder(BCryptPasswordEncoder passwordEncoder) {
-		this.passwordEncoder = passwordEncoder;
-	}
+//	@Autowired
+//	public void setPasswordEncoder(BCryptPasswordEncoder passwordEncoder) {
+//		this.passwordEncoder = passwordEncoder;
+//	}
 
 	@Override
 	@Transactional

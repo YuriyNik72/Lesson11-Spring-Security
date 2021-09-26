@@ -19,7 +19,7 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
 
     List<Product> findAllByPriceBetween(double min, double max);
 //
-//    Product findOneByTitleAndId(String title, Long id);
+    Product findOneByTitleAndId(String title, Long id);
 //
 //  //  Product findOneByVendorCode
 //
